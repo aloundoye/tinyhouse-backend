@@ -6,13 +6,12 @@ const app = express();
 const port = 9000;
 
 //fix a bug with server.applyMiddleware starting
-let server;
-async function startServer(){
-  server = new ApolloServer({typeDefs, resolvers });
+async function startApolloServer(){
+  const server = new ApolloServer({typeDefs, resolvers });
   await server.start();
   server.applyMiddleware({ app, path: "/api" });
 }
-startServer();
+startApolloServer();
 
 
 app.listen(port);
