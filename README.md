@@ -1,5 +1,15 @@
-- `npm install` to install package dependencies
-- `npm run start` to run Node:Express server
-- Navigate to `http://localhost:9000/api` to launch GraphQL Playground
+Tinyhouse (Node.js Backend with graphql)
 
-**Note - you'll need to use your MongoDB Atlas configuration credentials to make the server connection to MongoDB. In this and following repos, the following environment configuration variables will need to be defined in a `.env` file at the root of the project directory - `PORT`, `DB_USER`, `DB_USER_PASSWORD`, and `DB_CLUSTER`.**
+The React.js frontend can be found [here](https://github.com/aloundoye/tinyhouse-frontend/tree/final)
+
+# Usage
+
+### Run the Server
+
+```bash
+npm run start
+# or
+yarn start
+```
+
+Open [http://localhost:9000](http://localhost:9000) to access the server
